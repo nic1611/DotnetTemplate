@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotnetTemplate.Domain\DotnetTemplate.Domain.csproj" />
     <ProjectReference Include="..\DotnetTemplate.Infra.Data.Postgres\DotnetTemplate.Infra.Data.Postgres.csproj" />
   </ItemGroup>
 

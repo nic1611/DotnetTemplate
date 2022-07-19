@@ -1,14 +1,10 @@
+using DotnetTemplate.Domain.Models;
 using DotnetTemplate.Infra.Data.Postgres.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace DotnetTemplate.Infra.CrossCutting.Identity {
     public static class ApiIdentityConfig {
@@ -36,7 +32,7 @@ namespace DotnetTemplate.Infra.CrossCutting.Identity {
                 };
             });
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = true)
                             .AddEntityFrameworkStores<IdentityUserDbContext>();
         }
     }

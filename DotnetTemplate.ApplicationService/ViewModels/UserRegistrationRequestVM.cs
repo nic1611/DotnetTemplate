@@ -14,7 +14,7 @@ namespace DotnetTemplate.ApplicationService.ViewModels {
     }
 
     public enum Role {
-        Diarist = 1,
-        Contractor = 2
+        Admin = 1,
+        Consumer = 2
     }
 }
