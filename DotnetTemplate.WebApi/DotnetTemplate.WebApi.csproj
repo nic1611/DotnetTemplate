@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DotnetTemplate.ApplicationService\DotnetTemplate.ApplicationService.csproj" />
+    <ProjectReference Include="..\DotnetTemplate.CrossCutting.Ioc\DotnetTemplate.Infra.CrossCutting.Ioc.csproj" />
     <ProjectReference Include="..\DotnetTemplate.Domain\DotnetTemplate.Domain.csproj" />
     <ProjectReference Include="..\DotnetTemplate.Infra.CrossCutting.Identity\DotnetTemplate.Infra.CrossCutting.Identity.csproj" />
   </ItemGroup>
